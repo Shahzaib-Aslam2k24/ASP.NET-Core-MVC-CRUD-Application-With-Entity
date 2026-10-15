@@ -34,7 +34,7 @@ The project helped me practice backend development, database connectivity, routi
 <img width="1283" height="591" alt="image" src="https://github.com/user-attachments/assets/ed2717d0-1811-43b8-9cf6-819f56372698" />
 
 ### Student List
-![Uploading image.png…]()
+<img width="1283" height="591" alt="image" src="https://github.com/user-attachments/assets/99bf16a4-ba89-4080-863b-6d317a01dabb" />
 
 ### Create Student
 <img width="1049" height="645" alt="image" src="https://github.com/user-attachments/assets/3c97f8f4-aea7-402c-9f10-dbdb7ab08cf6" />
