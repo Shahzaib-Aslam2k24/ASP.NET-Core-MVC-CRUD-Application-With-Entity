@@ -12,6 +12,7 @@ namespace WebApplicationData.Controllers
         {
             this.context = _context;
         }
+      
         public IActionResult Index()
         {
             return View();
