@@ -34,7 +34,7 @@ The project helped me practice backend development, database connectivity, routi
 <img width="1283" height="591" alt="image" src="https://github.com/user-attachments/assets/ed2717d0-1811-43b8-9cf6-819f56372698" />
 
 ### Student List
-<img width="1396" height="723" alt="image" src="https://github.com/user-attachments/assets/37850f30-4fdc-4ed2-9e64-f91c935be95d" />
+![Uploading image.png…]()
 
 ### Create Student
 <img width="1049" height="645" alt="image" src="https://github.com/user-attachments/assets/3c97f8f4-aea7-402c-9f10-dbdb7ab08cf6" />
@@ -48,8 +48,8 @@ The project helped me practice backend development, database connectivity, routi
 
 ### Validation
 <img width="734" height="601" alt="image" src="https://github.com/user-attachments/assets/39e3ae5f-29e6-4831-8546-a5aa64645b0a" />
-## What I Learned
 
+### What I Learned
 - Building CRUD operations with ASP.NET Core MVC
 - Using Entity Framework Core with the Code First approach
 - Writing LINQ queries
@@ -58,4 +58,4 @@ The project helped me practice backend development, database connectivity, routi
 - Working with MVC routing and controller actions
 
 ## Author
-<h5>Shahzaib Aslam<5>
+Shahzaib Aslam
