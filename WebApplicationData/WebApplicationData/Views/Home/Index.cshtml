@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+@model Studentdata
+<div><h1 class="text-center">Registraion Form</h1></div>
+<div class="container-fluid bg-dark p-3 col-6 border rounded-2">
+    <form method="post" asp-action="insert" class="text-white">
+        <div class="text-danger" asp-validation-summary="All"></div>             
+        <div class="mb-3">
+            <label  class="form-label">Enter Name</label>
+            <input type="text" class="form-control" asp-for="name">            
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Enter Age</label>
+            <input type="number" class="form-control" asp-for="age">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Enter City</label>
+            <input type="text" class="form-control" asp-for="city">
+        </div>
+        <div class="mb-3">
+            <label  class="form-label">Enter Course</label>
+            <input type="text" class="form-control" asp-for="course">            
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Enter Phone</label>
+            <input type="text" class="form-control" asp-for="phone">
+        </div>
+        
+        <button type="submit" class="btn btn-primary form-control">Submit</button>
+    </form>
+</div>

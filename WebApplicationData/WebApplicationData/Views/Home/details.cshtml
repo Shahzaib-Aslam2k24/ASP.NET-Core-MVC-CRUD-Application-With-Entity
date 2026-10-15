@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Details";
+}
+@model Studentdata
+<h1 class="col-6">Students Details Is !</h1>
+<div class="bg-info p-5 col-6 border rounded-2">
+        <h2>Name is : <span>@Model.name</span></h2>
+        <h2>Age is : <span>@Model.age</span></h2>
+        <h2>City is : <span>@Model.city</span></h2>
+        <h2>Phone no is : <span>@Model.phone</span></h2>
+        <h2>Courses is : <span>@Model.course</span></h2>
+    <div class="d-grid gap-2 mt-4">
+        <a class="btn btn-primary" type="button" asp-controller="Home" asp-action="Index">Home</a>
+        <a class="btn btn-primary form-control" asp-controller="RetriveData" asp-action="Index">Back to list</a>
+    </div>
+</div>

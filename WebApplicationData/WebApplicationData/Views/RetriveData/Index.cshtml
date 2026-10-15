@@ -1,0 +1,55 @@
+﻿@{
+    ViewData["Title"]="All data";
+}
+@model IEnumerable<Studentdata>
+<div class="bg-success text-center p-1 mb-2"><h1>All Student Record</h1></div>
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>Message! </strong> @TempData["Message"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+<table class="table table-striped table-hover">
+    <thead>
+        <tr>            
+            <th scope="col">Name</th>
+            <th scope="col">Age</th>
+            <th scope="col">City</th>
+            <th scope="col">Course</th>
+            <th scope="col">Phone</th>  
+            <th scope="col">Edit</th>
+            <th scope="col">Details</th>
+            <th scope="col">Delete</th>
+            <th scope="col">Create</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var data in Model)
+        {
+            <tr>
+                <td>@data.name</td>
+                <td>@data.age</td>
+                <td>@data.city</td>
+                <td>@data.course</td>
+                <td>@data.phone</td>  
+                <td>
+                    <a class="btn btn-warning" asp-controller="home" asp-route-id="@data.id" asp-action="edit">Edit</a>
+                </td>
+                <td>
+                    <a class="btn btn-info"  asp-route-id="@data.id" asp-action="details" asp-controller="Home">Details</a>
+                </td>
+                <td>
+                    <a class="btn btn-danger" asp-route-id="@data.id" asp-controller="home" asp-action="confirm">Delete</a>
+                </td>
+                <td>
+                    <a class="btn btn-success" asp-controller="Home" asp-action="Index">Create</a>
+                </td>
+
+            </tr>
+        }
+    </tbody>
+</table>
+<div class="d-grid gap-2">
+    <a class="btn btn-primary" type="button" asp-controller="Home" asp-action="Index">Home</a>
+</div>

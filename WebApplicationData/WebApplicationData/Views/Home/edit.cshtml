@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Edit";
+}
+@model Studentdata
+
+<div><h1 class="text-center">Edit Form</h1></div>
+<div class="container-fluid bg-dark p-2 col-6 border rounded-2"> 
+
+    <form method="post" asp-action="update" class="text-white">
+        <div class="text-danger" asp-validation-summary="All"></div>
+        <input type="hidden" asp-for="id"/>
+        <div class="mb-3">
+            <label class="form-label">Enter Name</label>
+            <input type="text" class="form-control" asp-for="name">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Enter Age</label>
+            <input type="number" class="form-control" asp-for="age">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Enter City</label>
+            <input type="text" class="form-control" asp-for="city">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Enter Course</label>
+            <input type="text" class="form-control" asp-for="course">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Enter Phone</label>
+            <input type="text" class="form-control" asp-for="phone">
+        </div>
+        <button type="submit" class="btn btn-primary form-control mb-2">Edit</button>
+        <a class="btn btn-primary form-control" asp-controller="RetriveData" asp-action="Index">Back to list</a>
+    </form>
+</div>
