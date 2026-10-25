@@ -1,0 +1,40 @@
+@model EF_Practice.Models.Courses
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<div class="container bg-info col-6 p-2">
+    <h4>Are you sure to delete your data...?</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CId)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CFee)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CFee)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CDuration)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CDuration)
+        </dd>
+    </dl>
+    
+        <a class="btn btn-danger" asp-controller="Courses" asp-action="DeleteConfirmed" asp-route-id="@Model.CId">Delete</a>
+        <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+   
+</div>
